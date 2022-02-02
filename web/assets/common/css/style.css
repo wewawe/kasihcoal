@@ -49,7 +49,7 @@ html {
 .about__header {
   width: 100%;
   height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url(web/assets/common/img/jtother.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../img/jtother.jpg");
   background-size: cover;
   background-position: center;
   padding: 0 8%;
