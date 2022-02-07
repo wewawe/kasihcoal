@@ -187,7 +187,7 @@
               <tr>
                 <td valign="top"><i class="bi bi-envelope-fill"></i></td>
                 <td valign="top">
-                  <p>Email:&emsp;admin@kasihcoal.com</p>
+                  <p>Email:&emsp;<a href="mailto:admin@kasihcoal.com" class="text-light">admin@kasihcoal.com</a></p>
               </tr>
             </table>
           </div>
@@ -203,6 +203,14 @@
   <script src="web/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="web/assets/common/js/main.js"></script>
+
+  <script>
+    history.scrollRestoration = "manual";
+
+    $(window).on('beforeunload', function () {
+      $(window).scrollTop(0);
+    });
+  </script>
 
 </body>
 
