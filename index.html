@@ -25,7 +25,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-custom navbar-expand-lg py-3 navbar-dark fixed-top fs-5">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top fs-5">
     <div class="container">
       <a class="navbar-brand" href="/"></a><img src="web/assets/common/img/logo_kc-head.png" height="50" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -81,8 +81,8 @@
   </section>
   <!-- End Carousel -->
 
-  <!-- About -->
-  <section id="about">
+  <!-- Greeting -->
+  <section id="greeting">
     <div class="container">
       <div class="row about text-center mb-2">
         <div class="col">
@@ -98,10 +98,10 @@
       </div>
     </div>
   </section>
-  <!-- End of About -->
+  <!-- End of Greeting -->
 
-  <!-- Clients -->
-  <section id="clients">
+  <!-- About -->
+  <section id="about">
     <div class="parallax mt-5">
       <div class="container clients text-light">
         <div class="row">
@@ -114,24 +114,31 @@
               sustainability.</p>
           </div>
           <div class="col text-center">
-            <a class="btn btn-primary  rounded-pill justify-content-center" href="about.html" role="button">See More</a>
+            <a class="btn btn-primary rounded-pill justify-content-center" href="about.html" role="button">See More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End of Clients -->
+  <!-- End of About -->
 
-  <section id="clients">
-    <div class="clients mt-3 py-5" data-aos="fade-down">
-      <h3>Our Clients</h3>
-    </div>
+  <!-- Client -->
+  <section class="clients" id="clients">
     <div class="container mb-5" style="overflow-x: hidden">
+      <div class="row">
+        <div class="col-sm-12 mb-4" data-aos="fade-down">
+          <h3 class="text-center">Our Clients</h3>
+          <hr>
+        </div>
+      </div>
       <div class="row g-3">
         <div class=" col-sm-12 col-md-6 col-lg-6" data-aos="fade-right">
-          <p><span style="justify-content:center;">PT Kasih Coal Resources are currently supplying our coal to various
-              customers both domestic and international. In domestic, our customers are factories, smelting plans and
-              retailers. For export market we have experienced supplying coal to various asian countries through several
+          <p><span style="justify-content:center;">PT Kasih Coal Resources are currently supplying our coal to
+              various
+              customers both domestic and international. In domestic, our customers are factories, smelting plans
+              and
+              retailers. For export market we have experienced supplying coal to various asian countries through
+              several
               reputable international traders.</span></p>
           <div class="col text-center">
             <a class="btn btn-primary rounded-pill justify-content-center" href="clients.html" role="button">See
@@ -144,17 +151,28 @@
       </div>
     </div>
   </section>
+  <!-- End of Client -->
 
-  <section id="contact">
-    <div class="con mt-5">
-      <h3 class="mb-5">Contact Us</h3>
-      <div class="location">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441.7190197639752!2d106.76198076265463!3d-6.197227375129604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f718642c19ab%3A0xde103bd9f5273f15!2sMAQNA%20Residence!5e0!3m2!1sen!2sid!4v1642936506757!5m2!1sen!2sid"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mb-4">
+          <h3 class="text-center">Contact Us</h3>
+          <hr>
+        </div>
+      </div>
+      <div class="con mt-5">
+        <h3 class="mb-5"></h3>
+        <div class="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441.7190197639752!2d106.76198076265463!3d-6.197227375129604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f718642c19ab%3A0xde103bd9f5273f15!2sMAQNA%20Residence!5e0!3m2!1sen!2sid!4v1642936506757!5m2!1sen!2sid"
+            width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
       </div>
     </div>
   </section>
+  <!-- End of Contact -->
 
   <footer class=footer>
     <div class="container text-light">
@@ -200,8 +218,11 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script src="web/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script src="web/assets/common/js/main.js"></script>
 
   <script>
@@ -212,6 +233,23 @@
     });
   </script>
 
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        if (window.pageYOffset > 40) {
+          nav.classList.add('scroll_navbar');
+        } else {
+          nav.classList.remove('scroll_navbar');
+        }
+      })
+    })
+  </script>
+
+  <script>
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
 </body>
 
 </html>
