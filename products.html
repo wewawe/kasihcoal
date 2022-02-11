@@ -25,13 +25,17 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top fs-5">
     <div class="container">
-      <a class="navbar-brand" href="/"></a><img src="web/assets/common/img/logo_kc-head.png" height="50" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="#"><img src="web/assets/common/img/logo_kc-head.png" width="60" height="55"
+          alt=""></a>
+      <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon mid-bar"></span>
+        <span class="toggler-icon bot-bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav me-auto ms-auto">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">HOME</a>
           </li>
@@ -39,13 +43,13 @@
             <a class="nav-link" href="about.html">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="products.html">PRODUCTS</a>
+            <a class="nav-link activ" href="products.html">PRODUCTS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="gallery.html">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#contact">CONTACT</a>
+            <a class="nav-link" href="contact.html">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -110,7 +114,7 @@
                 <p><span style="font-size: smaller;">Head Office<br />
                     Maqna Office No. 22-25 Business Park Kebon Jeruk<br />
                     Jalan Meruya Ilir Raya No.88, Kembangan<br />
-                    Jakarta Barat 11530<br />
+                    Jakarta Barat 11610<br />
                     Indonesia</span></p>
               </td>
             </tr>
@@ -121,7 +125,7 @@
             <tr>
               <td valign="top"><i class="bi bi-telephone-fill"></i></td>
               <td valign="top">
-                <p>Phone:&ensp;+6221-31113825</p>
+                <p>Phone:&ensp;<a href="tel:+6221-31113825" class="text-light">+6221-31113825</a></p>
             </tr>
           </table>
           <div class="col-md-6 col-sm-6 text-light">
@@ -129,7 +133,7 @@
               <tr>
                 <td valign="top"><i class="bi bi-envelope-fill"></i></td>
                 <td valign="top">
-                  <p>Email:&emsp;admin@kasihcoal.com</p>
+                  <p>Email:&emsp;<a href="mailto:admin@kasihcoal.com" class="text-light">admin@kasihcoal.com</a></p>
               </tr>
             </table>
           </div>
@@ -141,8 +145,6 @@
       </div>
     </div>
   </footer>
-
-
 
   <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
     integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>

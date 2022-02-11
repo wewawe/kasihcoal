@@ -23,15 +23,19 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg py-3 navbar-dark fixed-top fs-5">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top fs-5">
     <div class="container">
-      <a class="navbar-brand" href="/"></a><img src="web/assets/common/img/logo_kc-head.png" height="50" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="#"><img src="web/assets/common/img/logo_kc-head.png" width="60" height="55"
+          alt=""></a>
+      <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon mid-bar"></span>
+        <span class="toggler-icon bot-bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav me-auto ms-auto">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">HOME</a>
           </li>
@@ -45,7 +49,7 @@
             <a class="nav-link" href="gallery.html">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="index.html#contact">CONTACT</a>
+            <a class="nav-link activ" href="contact.html">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -56,17 +60,51 @@
   <!-- jumbotron -->
   <div class="container"></div>
   <div class="contact__header text-center text-light">
-    <h1>CONTACT US</h1>
+    <h1>CONTACT</h1>
   </div>
   <!-- End of Jumbotron -->
 
-  <!-- ContactUs Map -->
-  <section class="location">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441.7190197639752!2d106.76198076265463!3d-6.197227375129604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f718642c19ab%3A0xde103bd9f5273f15!2sMAQNA%20Residence!5e0!3m2!1sen!2sid!4v1642936506757!5m2!1sen!2sid"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 d-flex justify-content-center">
+          <table>
+            <tr>
+              <td valign="top"><i class="bi bi-geo-alt-fill"></i></td>
+              <td valign="top">
+                <p><span style="font-size: smaller;">Head Office<br />
+                    Maqna Office No. 22-25 Business Park Kebon Jeruk<br />
+                    Jalan Meruya Ilir Raya No.88, Kembangan<br />
+                    Jakarta Barat 11610<br />
+                    Indonesia</span></p>
+            <tr>
+              <td valign="top"><i class="bi bi-telephone-fill"></i></td>
+              <td valign="top">
+                <p>Phone:&ensp;<a href="tel:+6221-31113825">+6221-31113825</a></p>
+            </tr>
+            <tr>
+              <td valign="top"><i class="bi bi-envelope-fill"></i></td>
+              <td valign="top">
+                <p>Email:&emsp;<a href="mailto:admin@kasihcoal.com">admin@kasihcoal.com</a></p>
+            </tr>
+            </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="con">
+        <h3 class="mb-5"></h3>
+        <div class="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441.7190197639752!2d106.76198076265463!3d-6.197227375129604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f718642c19ab%3A0xde103bd9f5273f15!2sMAQNA%20Residence!5e0!3m2!1sen!2sid!4v1642936506757!5m2!1sen!2sid"
+            width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- End of ContactUs Map -->
+  <!-- End of Contact -->
 
   <footer class=footer>
     <div class="container text-light">
@@ -80,7 +118,7 @@
                 <p><span style="font-size: smaller;">Head Office<br />
                     Maqna Office No. 22-25 Business Park Kebon Jeruk<br />
                     Jalan Meruya Ilir Raya No.88, Kembangan<br />
-                    Jakarta Barat 11530<br />
+                    Jakarta Barat 11610<br />
                     Indonesia</span></p>
               </td>
             </tr>
@@ -91,7 +129,7 @@
             <tr>
               <td valign="top"><i class="bi bi-telephone-fill"></i></td>
               <td valign="top">
-                <p>Phone:&ensp;+6221-31113825</p>
+                <p>Phone:&ensp;<a href="tel:+6221-31113825" class="text-light">+6221-31113825</a></p>
             </tr>
           </table>
           <div class="col-md-6 col-sm-6">
@@ -99,7 +137,7 @@
               <tr>
                 <td valign="top"><i class="bi bi-envelope-fill text-light"></i></td>
                 <td valign="top">
-                  <p>Email:&emsp;admin@kasihcoal.com</p>
+                  <p>Email:&emsp;<a href="mailto:admin@kasihcoal.com" class="text-light">admin@kasihcoal.com</a></p>
               </tr>
             </table>
           </div>
@@ -112,6 +150,8 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script src="web/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="web/assets/common/js/main.js"></script>
 
@@ -120,6 +160,22 @@
 
     $(window).on('beforeunload', function () {
       $(window).scrollTop(0);
+    });
+  </script>
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        if (window.pageYOffset > 40) {
+          nav.classList.add('scroll_navbar');
+        } else {
+          nav.classList.remove('scroll_navbar');
+        }
+      })
+    })
+  </script>
+  <script>
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
     });
   </script>
 
